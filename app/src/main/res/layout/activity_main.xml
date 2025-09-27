@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kan-n"
+            android:textColor="#2196F3"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your creative journey awaits"
+            android:textColor="#666"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Create an account button -->
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an account"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="#EEEEEE"
+            android:textColor="#333"/>
+
+        <!-- Text: Log in with an existing account -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in with an existing account"
+            android:textColor="#888"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Social login row -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/apple_icon"
+                android:background="@android:color/transparent"
+                android:contentDescription="Apple Login"
+                android:scaleType="centerInside"
+                android:layout_margin="10dp"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/google_icon"
+                android:background="@android:color/transparent"
+                android:contentDescription="Google Login"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerInside"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/x_icon"
+                android:background="@android:color/transparent"
+                android:contentDescription="X Login"
+                android:scaleType="centerInside"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/facebook_icon"
+                android:background="@android:color/transparent"
+                android:contentDescription="Facebook Login"
+                android:layout_marginStart="10dp"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This site is protected by reCAPTCHA Enterprise and the Google Privacy Policy and Terms of Service apply."
+            android:textSize="12sp"
+            android:textColor="#999"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>
